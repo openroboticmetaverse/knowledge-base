@@ -8,12 +8,14 @@ theme:
     - navigation.footer
 
   palette:
+    # dark mode
     - scheme: slate
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
       primary: black
-      accent: indigo 
+      accent: indigo
+    # light mode
     - scheme: default 
       toggle:
         icon: material/toggle-switch

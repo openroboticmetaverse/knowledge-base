@@ -1,6 +1,6 @@
 # Welcome to Open Roboverse's Knowledge Base
 
-!!! example
+!!! note
 
     This is still very early in development. Still work in progress!
 

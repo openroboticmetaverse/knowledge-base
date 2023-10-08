@@ -10,7 +10,11 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
-
+    - navigation.sections
+    - toc.integrate 
+    - navigation.top
+    - navigation.path
+    
   font:
     text: Montserrat
 

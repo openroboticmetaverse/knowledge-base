@@ -6,6 +6,13 @@ theme:
 
   features:
     - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+
+  font:
+    text: Montserrat
 
   palette:
     # dark mode
@@ -14,7 +21,7 @@ theme:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
       primary: black
-      accent: indigo
+      accent: deep purple
     # light mode
     - scheme: default 
       toggle:

@@ -34,6 +34,11 @@ theme:
       primary: indigo
       accent:  blue grey
 
+nav:
+  - 'index.md'
+  - 'get_started.md'
+  - 'about.md'
+
 markdown_extensions:
   - admonition
   - pymdownx.details

@@ -14,9 +14,9 @@ theme:
     - toc.integrate 
     - navigation.top
     - navigation.path
-    
-  font:
-    text: Montserrat
+
+  # disables loading fonts from Google Fonts  
+  font: false
 
   palette:
     # dark mode
@@ -68,6 +68,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/openroboverse
 
+extra_css:
+  - stylesheets/extra.css
+  
 copyright: |
   &copy; 2023 <a href="https://github.com/openroboverse"  target="_blank" rel="noopener">Open Roboverse</a> - 
   <a href="#__consent">Change cookie settings</a>

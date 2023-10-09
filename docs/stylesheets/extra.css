@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-    font-weight: 200 700;  /* This range depends on the weights included in the variable font */
+    font-weight: 100 900;
+    /* This range depends on the weights included in the variable font */
     font-style: normal;
     font-display: swap;
 }
@@ -9,7 +10,8 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 300 700;  /* This range depends on the weights included in the variable font */
+    font-weight: 100 900;
+    /* This range depends on the weights included in the variable font */
     font-style: italic;
     font-display: swap;
 }
@@ -17,16 +19,19 @@
 @font-face {
     font-family: 'Roboto Mono';
     src: url('fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
-    font-weight: 300 700;  /* This range depends on the weights included in the variable font */
+    font-weight: 100 700;
+    /* This range depends on the weights included in the variable font */
     font-style: normal;
     font-display: swap;
 }
 
 :root {
-    --md-text-font: "Montserrat"; 
+    --md-text-font: "Montserrat";
     --md-code-font: "Roboto Mono";
-  }
+}
 
-.md-header-title {
-    font-weight: 100;
+/* Main title class*/
+.md-ellipsis {
+    /*font-family: "Roboto Mono";*/
+    font-weight: 400;
 }

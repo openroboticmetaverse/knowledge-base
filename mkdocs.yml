@@ -20,19 +20,21 @@ theme:
 
   palette:
     # dark mode
-    - scheme: slate
+    - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: octicons/sun-16
         name: Switch to dark mode
       primary: black
-      accent: deep purple
+      accent: blue grey   
+
     # light mode
-    - scheme: default 
+    - scheme: slate 
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: indigo
-      accent:  blue grey
+        icon: octicons/moon-16
+        name: Switch to light mode 
+      primary: black
+      accent: grey   
+
 
 nav:
   - 'index.md'
@@ -70,7 +72,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
-  
+
 copyright: |
   &copy; 2023 <a href="https://github.com/openroboverse"  target="_blank" rel="noopener">Open Roboverse</a> - 
   <a href="#__consent">Change cookie settings</a>

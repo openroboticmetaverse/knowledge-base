@@ -64,4 +64,4 @@ Once you've set up ROS Humble and Gazebo, you're ready to start creating and sim
 3. **Community**: Join the ROS community forums and Gazebo community to ask questions, share projects, and collaborate.
 
 !!! success "Good job"
-    You've made throught the first step
+    You've made it through the first step!

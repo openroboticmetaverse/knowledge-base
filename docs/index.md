@@ -1,7 +1,7 @@
 # Home
 !!! note
 
-    This is still very early in development. Still work in progress!
+    Early in development. Still work in progress!
 
 ## Welcome
 

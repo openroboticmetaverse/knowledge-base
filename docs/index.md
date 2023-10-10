@@ -22,5 +22,5 @@ Simulation provides a risk-free and cost-effective environment for testing and r
 
 Ready to embark on this exciting journey? Browse our knowledge base to discover tutorials, research papers, case studies, and much more. Whether you're a seasoned expert or just starting out, there's something here for everyone.
 
-[Begin your journey](/knowledge-base/get_started){: .md-button .md-button--primary style="margin-right: 10px; margin-bottom: 10px;" }
-[Learn more about us](/knowledge-base/about){ .md-button .md-button--dense }
+[Begin your journey](knowledge-base/get-started){: .md-button .md-button--primary style="margin-right: 10px; margin-bottom: 10px;" }
+[Learn more about us](knowledge-base/about){ .md-button .md-button--dense }

@@ -4,6 +4,9 @@ theme:
   logo: assets/icon.svg
   favicon: assets/icon.svg
 
+  icon:
+    repo: fontawesome/brands/github
+
   features:
     - navigation.footer
     - navigation.instant
@@ -76,3 +79,7 @@ extra_css:
 copyright: |
   &copy; 2023 <a href="https://github.com/openroboverse"  target="_blank" rel="noopener">Open Roboverse</a> - 
   <a href="#__consent">Change cookie settings</a>
+
+repo_url: https://github.com/openroboverse/knowledge-base
+repo_name: openroboverse/knowledge-base
+edit_uri: edit/main/docs/

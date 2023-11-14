@@ -2,6 +2,10 @@
 
 Welcome to the starting point of your journey into the world of autonomous robots with ROS and Gazebo. Before you dive into creating and simulating robots, there are some prerequisites and tools you need to have in place. This guide will walk you through them.
 
+!!! note
+
+    This is a mock guide to test the functionality of MkDocs. Not accurate!
+
 ## Prerequisites
 !!! info "Supported Versions"
     This guide specifically covers the setup for ROS Humble on Ubuntu 22.04 LTS. If you're using different versions, please refer to the official ROS documentation for the appropriate setup instructions.
@@ -47,13 +51,6 @@ sudo rosdep init
 rosdep update
 ```
 
-### 4. **Install Gazebo**
-
-Gazebo usually comes bundled with the full installation of ROS. However, if you need to install it separately:
-
-```bash
-sudo apt install gazebo
-```
 
 ## Next Steps
 

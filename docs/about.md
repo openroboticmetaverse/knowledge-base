@@ -1,7 +1,7 @@
 ### **Who are we?**
-We are Open Roboverse, a student initiative currently in the founding process. Our founders are students from RWTH Aachen University and FH Aachen and highly motivated to strengthen the robotic community in and outside of Aachen, Germany.
+We are **open robotic metaverse** or in short **orom**, a student initiative currently in the founding process. Our founders are students from RWTH Aachen University and FH Aachen and highly motivated to strengthen the robotic community in and outside of Aachen, Germany.
 
-![Open Roboverse Logo](https://raw.githubusercontent.com/openroboverse/knowledge-base/main/docs/assets/icon.png)
+![orom Logo](https://raw.githubusercontent.com/openroboverse/knowledge-base/main/docs/assets/icon.png)
 
 ### **Vision**
 
@@ -20,7 +20,7 @@ We are creating a platform that helps everyone embrace their experiences with ro
 - **Facilitation Tools**: We provide ready-to-use building blocks that make starting with robotics and simulation quicker and more intuitive.
 - **Educational Materials and Mentorship**: We offer an easy-to-follow guide for learning robotics. We encourage a culture of support where the more experienced members assist those newer in the field and we believe that we all can always learn from each other.
 - **Bridging Theory and Practice**: We strive to bridge the gap between the theoretical knowledge found in academic institutions and the practical needs of the industry.
-- ***Open-Source Involvement:** We contribute to the open-source community and welcome everyone to join our vision.*
+- **Open-Source Involvement:** We contribute to the open-source community and welcome everyone to join our vision.*
 
 ***Additional Services***
 

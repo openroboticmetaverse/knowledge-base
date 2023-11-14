@@ -5,7 +5,7 @@
 
 ## Welcome
 
-Welcome to the official knowledge base of **Open Roboverse**. Here, we provide comprehensive resources, guidelines, and insights to acquaint you with the revolutionary metaverse of simulated autonomous robots.
+Welcome to the official knowledge base of **open robotic metaverse** or in short **orom**. Here, we provide comprehensive resources, guidelines, and insights to acquaint you with the revolutionary metaverse of simulated autonomous robots.
 
 ## What We Offer
 

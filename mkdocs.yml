@@ -72,6 +72,8 @@ extra:
       link: https://instagram.com/openroboverse
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/openroboverse
+    - icon: fontawesome/brands/edge
+      link: https://www.openroboticmetaverse.org
 
 extra_css:
   - stylesheets/extra.css

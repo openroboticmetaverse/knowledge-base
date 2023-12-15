@@ -1,20 +1,14 @@
-# Contributing to the Knowledge Base
+# Contribute
 
 First and foremost, thank you for considering contributing to our knowledge base! Every contribution, whether it's a typo fix or a new article, helps us improve and grow. This document provides guidelines and steps for contributing.
 
-## 📝 Table of Contents
-- [Code of Conduct](#code-of-conduct)
-- [How Can I Contribute?](#how-can-i-contribute)
-    - [Reporting Bugs](#reporting-bugs)
-    - [Suggesting Enhancements](#suggesting-enhancements)
-    - [Your First Contribution](#your-first-contribution)
-- [Submission Guidelines](#submission-guidelines)
+##  Code of Conduct
 
-## 🤝 Code of Conduct
+The most recent version of our code of conducs can be viewed [here](https://github.com/openroboticmetaverse/knowledge-base/blob/main/CODE_OF_CONDUCT.md). 
 
-By participating, you are expected to uphold this code. Please report unacceptable behavior to [email@example.com](mailto:email@example.com).
+By participating, you are expected to uphold this code. Please report unacceptable behavior to [openroboticmetaverse@gmail.org](mailto:openroboticmetaverse@gmail.org).
 
-## 🚀 How Can I Contribute?
+##  How Can I Contribute?
 
 ### Reporting Bugs
 
@@ -29,13 +23,13 @@ By participating, you are expected to uphold this code. Please report unacceptab
 - Explain why this enhancement would be useful to most users.
 - List some other platforms where this enhancement exists, if applicable.
 
-### Your First Contribution
+<!-- ### Your First Contribution
 
 Unsure where to begin? Start by looking at these `Beginner Friendly` issues:
 
 - [Beginner issues](#) - issues that should only require a few lines of code and minimal additional context.
-
-## 📬 Submission Guidelines
+ -->
+##  Submission Guidelines
 
 ### Writing Content
 
@@ -46,16 +40,9 @@ Unsure where to begin? Start by looking at these `Beginner Friendly` issues:
 
 ### Submitting a Pull Request
 
-1. **Fork the Repository**: Start by forking [our repository on GitHub](#).
+1. **Fork the Repository**: Start by forking [our repository on GitHub](github.com/openroboticmetaverse/knowledge-base).
 2. **Clone Your Fork**: Clone your forked repository to your local machine.
-3. **Branch**: Create a new branch for your changes.
-4. **Make Your Changes**: Edit the files and make your changes.
-5. **Commit**: Commit your changes with a clear and descriptive commit message.
-6. **Push**: Push your changes to your fork on GitHub.
-7. **Pull Request**: Submit a pull request from your branch to the main repository.
+3. **Make Your Changes**: Edit the files and make your changes.
+4. **Pull Request**: Submit a pull request from your fork to the main repository.
 
 Your pull request will be reviewed by the maintainers, who might ask for some changes or clarification. Once approved, your contribution will be merged. Congratulations and thank you!
-
----
-
-Remember to replace placeholders (like `[our repository on GitHub](#)`) with actual links or information specific to your project. This template provides a good starting point, but personalizing it to fit your project's tone and specifics can make it even more effective.

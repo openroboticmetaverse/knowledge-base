@@ -3,6 +3,7 @@ theme:
   name: material
   logo: assets/icon.svg
   favicon: assets/icon.svg
+  custom_dir: overrides
 
   icon:
     repo: fontawesome/brands/github
@@ -43,6 +44,7 @@ nav:
   - "index.md"
   - "get-started.md"
   - "about.md"
+  - "contribute.md"
 
 markdown_extensions:
   - admonition

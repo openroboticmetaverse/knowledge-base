@@ -67,22 +67,24 @@ extra:
       make our documentation better.
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/openroboverse
+      link: https://github.com/openroboticmetaverse
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/openroboverse
+      link: https://instagram.com/openroboticmetaverse
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/openroboverse
+      link: https://www.linkedin.com/company/openroboticmetaverse
     - icon: fontawesome/brands/edge
       link: https://www.openroboticmetaverse.org
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/orom_org
 
 extra_css:
   - stylesheets/extra.css
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/openroboverse"  target="_blank" rel="noopener">open robotic metaverse</a> - 
+  &copy; 2023 <a href="https://www.openroboticmetaverse.org"  target="_blank" rel="noopener">open robotic metaverse</a> - 
   <a href="#__consent">Change cookie settings</a>
 
 
-repo_url: https://github.com/openroboverse/knowledge-base
-repo_name: openroboverse/knowledge-base
+repo_url: https://github.com/openroboticmetaverse/knowledge-base
+repo_name: openroboticmetaverse
 edit_uri: edit/main/docs/

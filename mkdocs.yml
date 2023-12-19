@@ -3,7 +3,6 @@ theme:
   name: material
   logo: assets/icon.svg
   favicon: assets/icon.svg
-  custom_dir: overrides
 
   icon:
     repo: fontawesome/brands/github
@@ -45,6 +44,7 @@ nav:
   - "get-started.md"
   - "about.md"
   - "contribute.md"
+  - "Main Website": "https://www.openroboticmetaverse.org"
 
 markdown_extensions:
   - admonition

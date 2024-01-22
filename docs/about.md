@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 ### **Who are we?**
 We are **open robotic metaverse** or in short **orom**, a student initiative currently in the founding process. Our founders are students from RWTH Aachen University and FH Aachen and highly motivated to strengthen the robotic community in and outside of Aachen, Germany.
 

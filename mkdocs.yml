@@ -93,7 +93,7 @@ extra:
           name: This page could be improved
           data: 0
           note: >- 
-            Thank you for your feedback! Help us improve this page by <a href="https://openroboticmetaverse.org/contact" target="_blank" rel="noopener">contacting us</a>.
+            Thank you for your feedback! Help us improve this page by opening an <a href="https://github.com/openroboticmetaverse/knowledge-base/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">issue</a>.
 
 extra_css:
   - stylesheets/extra.css

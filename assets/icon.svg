@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128.42 127.49">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #03559f;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #f39200;
+      }
+
+      .cls-3 {
+        fill: #4bb8a6;
+      }
+
+      .cls-4 {
+        fill: #e71d73;
+      }
+
+      .cls-5 {
+        fill: url(#Unbenannter_Verlauf_10);
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_7);
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_7" data-name="Unbenannter Verlauf 7" x1="-88.65" y1="-496.85" x2="-6.79" y2="-496.85" gradientTransform="translate(91.01 -432.78) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#03559f"/>
+      <stop offset="1" stop-color="#4bb8a6"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_10" data-name="Unbenannter Verlauf 10" x1="239.69" y1="-180.97" x2="316.57" y2="-180.97" gradientTransform="translate(132.91 -296.5) rotate(135)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e71d73"/>
+      <stop offset="1" stop-color="#f39200"/>
+    </linearGradient>
+  </defs>
+  <g id="Ebene_9" data-name="Ebene 9">
+    <g>
+      <g>
+        <polygon class="cls-6" points="58.36 120.03 41.7 91.17 24.46 61.31 2.36 23.03 28.22 8.1 41.7 31.45 58.94 61.31 84.22 105.1 58.36 120.03"/>
+        <circle class="cls-3" cx="71.29" cy="112.56" r="14.93" transform="translate(-61.84 118.02) rotate(-60)"/>
+        <circle class="cls-1" cx="14.93" cy="14.93" r="14.93" transform="translate(-5.47 20.4) rotate(-60)"/>
+      </g>
+      <g>
+        <polygon class="cls-5" points="64.4 43.64 97.7 52.56 109.62 55.76 117.35 26.92 88.78 19.26 55.47 10.34 18.79 .51 11.07 29.35 64.4 43.64"/>
+        <circle class="cls-2" cx="14.93" cy="14.93" r="14.93" transform="translate(-6.19 14.93) rotate(-45)"/>
+        <circle class="cls-4" cx="113.49" cy="41.34" r="14.93" transform="translate(4.01 92.35) rotate(-45)"/>
+      </g>
+    </g>
+  </g>
+</svg>

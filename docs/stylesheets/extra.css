@@ -55,7 +55,7 @@
 
 
     /* body text color set to white for better visibility in dark mode*/
-    --md-typeset-color: white;
+    --md-typeset-color: rgb(221, 221, 221);
 
     --md-admonition-fg-color: var(--md-typeset-color);
     /* Links & Buttons hover color */
@@ -78,4 +78,8 @@
         border-color: #4CB7A5;
         color: var(--md-accent-bg-color)
     }
+    /* Change the color of inline code */
+code {
+    color: #a6a5ff; /* Set your desired color */
+}
 }

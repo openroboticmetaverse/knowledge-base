@@ -1,0 +1,1473 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../about/">
+      
+      
+      <link rel="icon" href="../assets/icon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>MVP Documentation - orom's knowledge base</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-N1TE3R198F"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-N1TE3R198F",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-N1TE3R198F",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue-grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mvp-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="orom&#39;s knowledge base" class="md-header__button md-logo" aria-label="orom's knowledge base" data-md-component="logo">
+      
+  <img src="../assets/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            orom's knowledge base
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MVP Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue-grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8m0-1.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m5.657-8.157a.75.75 0 0 1 0 1.061l-1.061 1.06a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l1.06-1.06a.75.75 0 0 1 1.06 0Zm-9.193 9.193a.75.75 0 0 1 0 1.06l-1.06 1.061a.75.75 0 1 1-1.061-1.06l1.06-1.061a.75.75 0 0 1 1.061 0M8 0a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 8 0M3 8a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 3 8m13 0a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 16 8m-8 5a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 13m3.536-1.464a.75.75 0 0 1 1.06 0l1.061 1.06a.75.75 0 0 1-1.06 1.061l-1.061-1.06a.75.75 0 0 1 0-1.061M2.343 2.343a.75.75 0 0 1 1.061 0l1.06 1.061a.75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018l-1.06-1.06a.75.75 0 0 1 0-1.06Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.598 1.591a.75.75 0 0 1 .785-.175 7.001 7.001 0 1 1-8.967 8.967.75.75 0 0 1 .961-.96 5.5 5.5 0 0 0 7.046-7.046.75.75 0 0 1 .175-.786m1.616 1.945a7 7 0 0 1-7.678 7.678 5.499 5.499 0 1 0 7.678-7.678"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/openroboticmetaverse/knowledge-base" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    openroboticmetaverse
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  MVP Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../contribute/" class="md-tabs__link">
+        
+  
+    
+  
+  Contribute
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://www.openroboticmetaverse.org" class="md-tabs__link">
+        
+  
+    
+  
+  Main Website
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="orom&#39;s knowledge base" class="md-nav__button md-logo" aria-label="orom's knowledge base" data-md-component="logo">
+      
+  <img src="../assets/icon.svg" alt="logo">
+
+    </a>
+    orom's knowledge base
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/openroboticmetaverse/knowledge-base" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    openroboticmetaverse
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MVP Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    MVP Documentation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Project Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Project Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-backend-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Backend Data Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-api-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. API Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. API Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-object-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Object Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-scene-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Scene Manager
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-data-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Data Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Data Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-base-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Base Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-scene-management-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Scene Management Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-object-library-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Object Library Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-state-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. State Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. State Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-basestore" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 BaseStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-librarystore" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 LibraryStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-scenestore" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 SceneStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-objectstore" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 ObjectStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-robotstore" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 RobotStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-errorstore" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6 ErrorStore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-leveraging-mobx-in-the-3d-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7 Leveraging MobX in the 3D Application
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7 Leveraging MobX in the 3D Application">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#471-observables" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7.1 Observables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#472-computed-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7.2 Computed Values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#473-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7.3 Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#474-reactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7.4 Reactions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#475-applying-mobx-to-3d-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7.5 Applying MobX to 3D Rendering
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-store-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.8 Store Interactions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-mobx-best-practices-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.9 MobX Best Practices Used
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ui-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. UI Components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. UI Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-sceneselector" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 SceneSelector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-modelbrowser" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 ModelBrowser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-mainscene" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 MainScene
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-3d-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 3D Rendering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 3D Rendering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-scenecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 SceneContent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-sceneobject-and-scenerobot" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 SceneObject and SceneRobot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-customtransformcontrols" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 CustomTransformControls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-sceneenvironment" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 SceneEnvironment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-renderobject-and-renderrobot" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.5 renderObject and renderRobot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. API Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. API Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-scenemanagerapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 sceneManagerApi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-objectlibraryapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 objectLibraryApi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.openroboticmetaverse.org" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Website
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="mvp-documentation">MVP Documentation</h1>
+<h2 id="1-project-overview"><strong>1. Project Overview</strong></h2>
+<p>This iteration of the MVP is a 3D scene management application that allows users to create, manipulate, and visualize 3D scenes with objects and robots. The application is built using:</p>
+<ul>
+<li><a href="https://react.dev/learn">React TypeScript</a> for the frontend</li>
+<li><a href="https://mobx.js.org/README.html">MobX</a> for state management</li>
+<li><a href="https://threejs.org/">Three.js</a> (via <a href="https://r3f.docs.pmnd.rs/getting-started/introduction">react-three-fiber</a>) for 3D rendering</li>
+<li><a href="https://www.djangoproject.com/start/">Django</a> for Backend</li>
+<li><a href="https://www.postgresql.org/">PostgresSQL</a> Database</li>
+</ul>
+<h3 id="11-backend-data-model">1.1 Backend Data Model</h3>
+<p>This diagram illustrates the data model and relationships for the MVP's 3D scene management application. It's divided into two main sections:</p>
+<ol>
+<li>Scene Management (pink section):</li>
+</ol>
+<p>Shows the structure of Scene, AbstractObject, Object, and Robot entities.
+Scene has properties like ID, name, user_id, and timestamps.
+AbstractObject is a base class with common properties like position, orientation, and scale.
+Object and Robot inherit from AbstractObject, with Object having a color property and Robot having joint_angles.</p>
+<ol>
+<li>Object Library (blue section):</li>
+</ol>
+<p>Displays the structure of AbstractReference, ReferenceObject, and ReferenceRobot.
+AbstractReference contains common properties like ID, name, file, and description.
+ReferenceRobot and ReferenceObject inherit from AbstractReference, with ReferenceRobot having a num_joints property.</p>
+<p><img alt="alt text" src="../assets/Untitled%20sssss.drawio.svg" /></p>
+<h2 id="2-api-structure"><strong>2. API Structure</strong></h2>
+<p>The API is structured into two main sections:</p>
+<h3 id="21-object-library">2.1 Object Library</h3>
+<ul>
+<li>Reference Robots (<code>/library/ref-robots/</code>)</li>
+<li>Reference Objects (<code>/library/ref-objects/</code>)</li>
+</ul>
+<h3 id="22-scene-manager">2.2 Scene Manager</h3>
+<ul>
+<li>Scenes (<code>/scene-manager/scenes/</code>)</li>
+<li>Robots (<code>/scene-manager/robots/</code>)</li>
+<li>Objects (<code>/scene-manager/objects/</code>)</li>
+</ul>
+<p>Each endpoint supports standard CRUD operations (GET, POST, PUT, PATCH, DELETE).</p>
+<h2 id="3-data-models"><strong>3. Data Models</strong></h2>
+<p>The project uses several key interfaces to represent data:</p>
+<h3 id="31-base-interfaces">3.1 Base Interfaces</h3>
+<ul>
+<li><code>IAbstractObject</code>: Base interface for objects and robots</li>
+<li><code>IAbstractReference</code>: Base interface for object and robot references</li>
+</ul>
+<h3 id="32-scene-management-interfaces">3.2 Scene Management Interfaces</h3>
+<ul>
+<li><code>IScene</code>: Represents a 3D scene</li>
+<li><code>IObject</code>: Represents an object in a scene (extends <code>IAbstractObject</code>)</li>
+<li><code>IRobot</code>: Represents a robot in a scene (extends <code>IAbstractObject</code>)</li>
+</ul>
+<h3 id="33-object-library-interfaces">3.3 Object Library Interfaces</h3>
+<ul>
+<li><code>IReferenceRobot</code>: Represents a reference robot (extends <code>IAbstractReference</code>)</li>
+<li><code>IReferenceObject</code>: Represents a reference object (extends <code>IAbstractReference</code>)</li>
+</ul>
+<h2 id="4-state-management"><strong>4. State Management</strong></h2>
+<p>The project uses MobX for state management. This section provides a detailed look at each store, its purpose, key observables, and important actions.</p>
+<h3 id="41-basestore">4.1 BaseStore</h3>
+<p><code>BaseStore</code> is a generic abstract class that provides common functionality for other stores.</p>
+<p>Key features:</p>
+<ul>
+<li><code>@observable items</code>: An array to store the main data of the store.</li>
+<li><code>@observable state</code>: Represents the current state of the store (idle, loading, success, or error).</li>
+<li><code>fetchItems</code>: A protected method to fetch items from an API.</li>
+<li><code>updateItem</code>: A protected method to update an item in the store.</li>
+<li><code>deleteItem</code>: A protected method to delete an item from the store.</li>
+<li><code>getItemById</code>: A method to retrieve an item by its ID.</li>
+</ul>
+<h3 id="42-librarystore">4.2 LibraryStore</h3>
+<p><code>LibraryStore</code> manages the state of reference objects and robots.</p>
+<p>Key observables:</p>
+<ul>
+<li><code>@observable referenceObjects</code>: An array of <code>IReferenceObject</code>.</li>
+<li><code>@observable referenceRobots</code>: An array of <code>IReferenceRobot</code>.</li>
+</ul>
+<p>Important actions:</p>
+<ul>
+<li><code>@action fetchLibraryData</code>: Fetches both reference objects and robots from the API.</li>
+<li><code>getReferenceObjectById</code>: Retrieves a reference object by its ID.</li>
+<li><code>getReferenceRobotById</code>: Retrieves a reference robot by its ID.</li>
+</ul>
+<h3 id="43-scenestore">4.3 SceneStore</h3>
+<p><code>SceneStore</code> manages the state of scenes.</p>
+<p>Key observables:</p>
+<ul>
+<li><code>@observable activeSceneId</code>: The ID of the currently active scene.</li>
+<li><code>@observable newSceneName</code>: The name for a new scene being created.</li>
+</ul>
+<p>Important actions:</p>
+<ul>
+<li><code>@action setActiveScene</code>: Sets the active scene by ID.</li>
+<li><code>@action fetchScenes</code>: Fetches all scenes from the API.</li>
+<li><code>@action createScene</code>: Creates a new scene.</li>
+<li><code>@action updateScene</code>: Updates an existing scene.</li>
+<li><code>@action deleteScene</code>: Deletes a scene.</li>
+</ul>
+<p>Computed values:</p>
+<ul>
+<li><code>@computed get activeScene</code>: Returns the currently active scene object.</li>
+</ul>
+<h3 id="44-objectstore">4.4 ObjectStore</h3>
+<p><code>ObjectStore</code> manages the state of objects in scenes.</p>
+<p>Key observables:</p>
+<ul>
+<li>Inherits <code>@observable items</code> from BaseStore, which stores <code>IObject</code> instances.</li>
+</ul>
+<p>Important actions:</p>
+<ul>
+<li><code>@action fetchObjects</code>: Fetches all objects from the API.</li>
+<li><code>@action createObject</code>: Creates a new object.</li>
+<li><code>@action updateObject</code>: Updates an existing object.</li>
+<li><code>@action deleteObject</code>: Deletes an object.</li>
+<li><code>@action getObjectsForScene</code>: Retrieves all objects for a specific scene.</li>
+</ul>
+<h3 id="45-robotstore">4.5 RobotStore</h3>
+<p><code>RobotStore</code> manages the state of robots in scenes.</p>
+<p>Key observables:</p>
+<ul>
+<li>Inherits <code>@observable items</code> from BaseStore, which stores <code>IRobot</code> instances.</li>
+</ul>
+<p>Important actions:</p>
+<ul>
+<li><code>@action fetchRobots</code>: Fetches all robots from the API.</li>
+<li><code>@action createRobot</code>: Creates a new robot.</li>
+<li><code>@action updateRobot</code>: Updates an existing robot.</li>
+<li><code>@action deleteRobot</code>: Deletes a robot.</li>
+<li><code>@action getRobotsForScene</code>: Retrieves all robots for a specific scene.</li>
+</ul>
+<h3 id="46-errorstore">4.6 ErrorStore</h3>
+<p><code>ErrorStore</code> manages application-wide errors.</p>
+<p>Key observables:</p>
+<ul>
+<li><code>@observable errors</code>: An array of Error objects.</li>
+</ul>
+<p>Important actions:</p>
+<ul>
+<li><code>@action addError</code>: Adds a new error to the store.</li>
+<li><code>@action clearErrors</code>: Clears all errors from the store.</li>
+</ul>
+<h3 id="47-leveraging-mobx-in-the-3d-application">4.7 Leveraging MobX in the 3D Application</h3>
+<p>MobX provides powerful tools for managing state in your 3D application. Here's how you can leverage MobX concepts within the current state management structure:</p>
+<h4 id="471-observables">4.7.1 Observables</h4>
+<p>Observables are at the core of MobX. In our stores, we use observables to track various aspects of the application state:</p>
+<ul>
+<li>In <code>SceneStore</code>: <code>@observable activeSceneId</code> tracks the current scene.</li>
+<li>In <code>ObjectStore</code> and <code>RobotStore</code>: <code>@observable items</code> arrays store the objects and robots.</li>
+<li>In <code>LibraryStore</code>: <code>@observable referenceObjects</code> and <code>@observable referenceRobots</code> store available models.</li>
+</ul>
+<p>Example usage:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">@observable</span><span class="w"> </span><span class="nx">activeSceneId</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="472-computed-values">4.7.2 Computed Values</h4>
+<p>Computed values derive information from observables. They're used throughout our stores to calculate values based on the current state:</p>
+<ul>
+<li>In <code>SceneStore</code>: <code>@computed get activeScene()</code> returns the currently active scene object.</li>
+</ul>
+<p>Example usage:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">@computed</span><span class="w"> </span><span class="nx">get</span><span class="w"> </span><span class="nx">activeScene</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">IScene</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">undefined</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">scene</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">scene</span><span class="p">.</span><span class="nx">id</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">activeSceneId</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="473-actions">4.7.3 Actions</h4>
+<p>Actions are methods that modify the state. All state modifications in our stores are wrapped in <code>@action</code> decorators:</p>
+<ul>
+<li>In <code>SceneStore</code>: <code>@action setActiveScene()</code>, <code>@action createScene()</code>, etc.</li>
+<li>In <code>ObjectStore</code> and <code>RobotStore</code>: <code>@action createObject()</code>, <code>@action updateRobot()</code>, etc.</li>
+</ul>
+<p>Example usage:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">@action</span>
+<span class="nx">setActiveScene</span><span class="p">(</span><span class="nx">sceneId</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">this</span><span class="p">.</span><span class="nx">activeSceneId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sceneId</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="474-reactions">4.7.4 Reactions</h4>
+<p>While not explicitly defined in our stores, reactions are used in components to respond to state changes. For example, in the <code>MainScene</code> component, we use <code>useEffect</code> to show toast messages when the scene store state changes.</p>
+<p>Example usage:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">sceneStore</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;error&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">toast</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">variant</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;destructive&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Error&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">description</span><span class="o">:</span><span class="w"> </span><span class="kt">sceneStore.state.error</span><span class="p">,</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">sceneStore</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">status</span><span class="p">]);</span>
+</code></pre></div>
+<h4 id="475-applying-mobx-to-3d-rendering">4.7.5 Applying MobX to 3D Rendering</h4>
+<p>To leverage MobX in the 3D aspects of your application:</p>
+<ol>
+<li><strong>Scene Management</strong>:</li>
+</ol>
+<p>Use <code>SceneStore</code> to manage the overall scene state.</p>
+<p>React to changes in <code>activeSceneId</code> to load or unload 3D content.</p>
+<ol>
+<li>
+<p><strong>Object Manipulation</strong>:</p>
+</li>
+<li>
+<p>Use <code>ObjectStore</code> and <code>RobotStore</code> to manage individual 3D entities.
+     Create actions for transforming objects (move, rotate, scale).</p>
+</li>
+<li>
+<p><strong>Real-time Updates</strong>:
+   Make your 3D components observers of relevant stores.
+   This ensures they re-render when the observed state changes.</p>
+</li>
+<li><strong>Performance Optimization</strong>:
+   Use computed values for expensive calculations in the 3D scene.
+   This helps avoid unnecessary recalculations.</li>
+<li><strong>User Interactions</strong>:
+   Tie user interactions (like clicking on a 3D object) to MobX actions.
+   This keeps all state changes centralized and trackable.</li>
+</ol>
+<p>Example of a 3D component using MobX:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">SceneObject</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">observer</span><span class="p">(({</span><span class="w"> </span><span class="nx">objectId</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">objectStore</span><span class="p">.</span><span class="nx">getItemById</span><span class="p">(</span><span class="nx">objectId</span><span class="p">);</span>
+
+<span class="w">  </span><span class="nx">useFrame</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Update object&#39;s 3D representation based on its state</span>
+<span class="w">    </span><span class="c1">// This will automatically re-run when the object&#39;s state changes</span>
+<span class="w">  </span><span class="p">});</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">mesh</span><span class="w"> </span><span class="nx">position</span><span class="o">=</span><span class="p">{</span><span class="nx">object</span><span class="p">.</span><span class="nx">position</span><span class="p">}</span><span class="w"> </span><span class="nx">rotation</span><span class="o">=</span><span class="p">{</span><span class="nx">object</span><span class="p">.</span><span class="nx">rotation</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="p">{</span><span class="cm">/* Object geometry and material */</span><span class="p">}</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/mesh&gt;</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3 id="48-store-interactions">4.8 Store Interactions</h3>
+<p>The stores interact with each other and the components in several ways:</p>
+<ol>
+<li><strong>SceneStore and ObjectStore/RobotStore</strong>: When a scene is selected in SceneStore, ObjectStore and RobotStore use the active scene ID to filter and display relevant objects and robots.</li>
+<li><strong>LibraryStore and ObjectStore/RobotStore</strong>: When creating new objects or robots, the reference data from LibraryStore is used to populate the initial properties.</li>
+<li><strong>ErrorStore and other stores</strong>: All other stores use ErrorStore to log errors that occur during API calls or other operations.</li>
+<li><strong>Stores and Components</strong>: React components use the <code>observer</code> HOC from MobX to automatically re-render when relevant observables change. They also call store actions to update the application state.</li>
+</ol>
+<h3 id="49-mobx-best-practices-used">4.9 MobX Best Practices Used</h3>
+<ol>
+<li><strong>Derivations</strong>: Computed values like <code>activeScene</code> in SceneStore are used for derived state.</li>
+<li><strong>Actions</strong>: All state modifications are wrapped in <code>@action</code> decorators to ensure they're tracked by MobX.</li>
+<li><strong>Reactions</strong>: Components use <code>useEffect</code> with MobX observables to trigger side effects when state changes.</li>
+<li><strong>Batching Updates</strong>: <code>runInAction</code> is used in asynchronous actions to batch updates and reduce re-renders.</li>
+</ol>
+<h2 id="5-ui-components"><strong>5. UI Components</strong></h2>
+<h3 id="51-sceneselector">5.1 SceneSelector</h3>
+<ul>
+<li>Allows users to select and manage scenes</li>
+<li>Displays a grid of available scenes</li>
+<li>Provides functionality to create new scenes</li>
+</ul>
+<p><img alt="Scene Selector" src="../assets/scene%20selector%20%281%29.png" /></p>
+<h3 id="52-modelbrowser">5.2 ModelBrowser</h3>
+<ul>
+<li>Displays a list of available models (primitive shapes, custom objects, and robots)</li>
+<li>Allows users to search and filter models</li>
+<li>Provides functionality to add models to the active scene</li>
+</ul>
+<p><img alt="Model Browser" src="../assets/modelbrowser%20%281%29.png" /></p>
+<h3 id="53-mainscene">5.3 MainScene</h3>
+<ul>
+<li>Main component for rendering the 3D scene</li>
+<li>Handles different states (loading, error, no active scene)</li>
+<li>Renders the Canvas component when a scene is active</li>
+</ul>
+<p><img alt="Main Scene" src="../assets/main%20scene.png" /></p>
+<h2 id="6-3d-rendering"><strong>6. 3D Rendering</strong></h2>
+<p>The project uses react-three-fiber for 3D rendering. Key components include:</p>
+<h3 id="61-scenecontent">6.1 SceneContent</h3>
+<ul>
+<li>Renders the content of the active scene</li>
+<li>Manages the creation, updating, and removal of 3D objects</li>
+</ul>
+<h3 id="62-sceneobject-and-scenerobot">6.2 SceneObject and SceneRobot</h3>
+<ul>
+<li>Render individual objects and robots in the scene</li>
+</ul>
+<h3 id="63-customtransformcontrols">6.3 CustomTransformControls</h3>
+<ul>
+<li>Provides controls for transforming (moving, rotating, scaling) objects in the scene</li>
+</ul>
+<h3 id="64-sceneenvironment">6.4 SceneEnvironment</h3>
+<ul>
+<li>Sets up the 3D environment (lights, grid, controls)</li>
+</ul>
+<h3 id="65-renderobject-and-renderrobot">6.5 renderObject and renderRobot</h3>
+<ul>
+<li>Helper functions for rendering objects and robots</li>
+</ul>
+<h2 id="7-api-integration"><strong>7. API Integration</strong></h2>
+<p>The <code>api.ts</code> file provides functions for interacting with the backend API:</p>
+<h3 id="71-scenemanagerapi">7.1 sceneManagerApi</h3>
+<ul>
+<li>Functions for managing scenes, objects, and robots</li>
+</ul>
+<h3 id="72-objectlibraryapi">7.2 objectLibraryApi</h3>
+<ul>
+<li>Functions for managing reference objects and robots</li>
+</ul>
+<p>These functions handle API requests, responses, and error handling, integrating with the toast notification system for user feedback.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thank you for your feedback! Help us improve this page by opening an <a href="https://github.com/openroboticmetaverse/knowledge-base/issues/new/?title=[Feedback]+MVP%20Documentation+-+/get-started/" target="_blank" rel="noopener">issue</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                About
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://www.openroboticmetaverse.org"  target="_blank" rel="noopener">open robotic metaverse e.V.</a> - 
+<a href="#__consent">Change cookie settings</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/openroboticmetaverse" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://instagram.com/openroboticmetaverse" target="_blank" rel="noopener" title="instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/openroboticmetaverse" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.openroboticmetaverse.org" target="_blank" rel="noopener" title="www.openroboticmetaverse.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M120.1 37.44C161.1 12.23 207.7-.775 255 .002 423 .002 512 123.8 512 219.5c-.1 32.7-13 63.9-35.9 87.2-22.9 23.2-54 36.5-86.7 37-75.2 0-91.5-23.1-91.5-32 0-3.8 1.2-6.2 4.8-9.4l1-1.2.4-1.6c10.5-11.5 15.9-26.2 15.9-41.6 0-78.7-82.2-142.7-184-142.7-37.54-.3-74.54 8.9-107.52 26.9 27-57.52 82.72-97.6 91.32-103.82.8-.55.3-.84.3-.84m15.6 318.06c-1.4 30 4.6 60 16.4 87.2 13.6 26.4 32.7 51 56.5 69.3-59.5-11.5-111.49-43.9-149.4-89.3C21.12 376.3 0 318.4 0 257.9c0-51.2 62.4-94.4 136-94.4 36.6-.6 72.4 10.9 101.8 32.7l-3.6 1.2c-51.5 17.6-98.5 90.7-98.5 158.1M469.8 400l-.7.1c-11.8 18.8-25.9 35.1-42.2 49.5-30.8 28-68.1 45.5-108.8 49.9-18.6.3-36.8-3.2-53.8-11.4-25.6-10.3-47.1-30-61.6-53-14.4-23.9-21.1-51.7-19-79.6-.6-20.1 5.4-40.3 15-58.2 13.9 33.1 37.5 61.3 67.6 80.8s65.5 29.5 101.4 28.6c31 .3 62.1-6.7 90.2-20.5l1.9-.9c3.9-2.3 7.7-3.9 11.6 0 4.5 4.9 1.8 9.2-1.2 14-.2.2-.3.5-.4.7"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/orom_org" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+
+  
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "navigation.path"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>

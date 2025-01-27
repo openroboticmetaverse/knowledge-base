@@ -10,7 +10,7 @@ We are **open robotic metaverse** or in short **orom**, a student initiative cur
 
 ### **Vision**
 
-We aim to **accelerate the development of robotic applications** by making use of the advancements in Simulation technology and Artificial Intelligence. We support individuals in acquiring skills and knowledge in this field and connect them with companies in search of solution implementers, while building a connected passionate community.
+We aim to **bring the robotics community together**, both locally and virtually, to encourage collaboration and innovation. Our efforts indirectly support the **acceleration of robotics application development** while **making the technology more accessible**. We help individuals gain skills and knowledge in this field and connect them with companies looking for solution implementers, all while building a connected and passionate community.
 
 ---
 
